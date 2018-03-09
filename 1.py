@@ -1,5 +1,7 @@
 class Non_human():
     brain = 2
+    tail = 1
+    head = 1
 
 class Animals(Non_human):
     def __init__(self):
@@ -19,13 +21,20 @@ class Bird (Non_human):
             self.strong = meal*1.5
             return self.strong
 
-cows = Animals()
-goats = Animals()
-sheep = Animals()
-pigs = Animals()
+class Cows(Non_human,Animals):
+    mass = 10
+class Goats(Non_human,Animals):
+    mass = 5
+class Sheep(Non_human,Animals):
+    mass = 5
+class Pigs(Non_human,Animals):
+    mass = 6
 
-chickens = Bird()
-gooses = Bird()
-ducks = Bird()
+class Chickens(Non_human,Bird):
+    mass = 2
+class Gooses(Non_human,Bird):
+    mass = 2
+class Ducks(Non_human,Bird):
+    mass = 1
 
-print(cows.power(2))
+
