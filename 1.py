@@ -49,4 +49,4 @@ class Gooses(Bird):
 
 
 class Ducks(Bird):
-    mass = 1
+    mass = 1 
